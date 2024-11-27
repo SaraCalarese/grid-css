@@ -1,0 +1,75 @@
+/* Stile di base */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+}
+
+.calculator {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  width: 300px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+/* Display della calcolatrice */
+.display {
+  grid-column: span 4;
+  background: #2e2e2e;
+  color: white;
+  text-align: right;
+  padding: 20px;
+  font-size: 2rem;
+  border-radius: 5px;
+  box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Pulsanti */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 10px;
+  background: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* Pulsanti operatori */
+.operator {
+  background: #cfd8dc;
+}
+
+/* Pulsante "=" */
+.equals {
+  grid-row: span 2;
+  background: #ff6b6b;
+  color: white;
+}
+
+/* Pulsante "0" */
+.zero {
+  grid-column: span 2;
+}
+
+/* Pulsante AC */
+.clear {
+  background: #ff6b6b;
+  color: white;
+}
